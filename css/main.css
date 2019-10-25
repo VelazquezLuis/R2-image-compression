@@ -13,17 +13,49 @@ I've left some boilerplate below for you.
 */
 
 body {
-
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  text-align: center;
 }
 
 article {
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* margin-left: auto;
+  margin-right: auto;  */
+  max-width: 50em;
+  margin: 2vw 3vw;
 }
 
-h1 {
-
+h1:first-of-type {
+  margin: 0.5em 0;
+}
+h2 {
+  margin: 0 0.1em;
+  text-align: left;
 }
 
 img {
+  max-width: 100%;
+}
 
+figure {
+  margin: 2vw 0;
+}
+figcaption {
+  text-align: right;
+  padding-right: 5vw;
+  color: darkblue;
+  font-size: 15px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+  article {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
